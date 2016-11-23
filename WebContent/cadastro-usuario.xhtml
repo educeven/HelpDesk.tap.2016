@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+	<title>Usuario</title>
+</head>
+<body>
+	
+	
+	<h2>Cadastro de novo usuario</h2>
+	<h:panelGrid columns="2">
+		
+		<h:outputLabel value="nome" />
+		<h:inputText value="#{UsuarioMB.usuario.nomeUs}"/>
+		
+		<h:outputLabel value="Codigo do cargo"/>
+		<h:inputText value="#{UsuarioMB.usuario.funcaoUs}"/>
+		
+		<h:commandButton value="Cadastrar" action="#{UsuarioMB.gravar(UsuarioMB.usuario)}"/>
+		
+	</h:panelGrid>
+	
+	
+</body>
+</html>

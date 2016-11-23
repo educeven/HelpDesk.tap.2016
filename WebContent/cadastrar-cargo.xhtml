@@ -6,11 +6,22 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Insert title here</title>
+<title>Cargo</title>
 </head>
 <body>
-	
-	
-	
+	<h1>Cadastrar cargo</h1>
+<form>
+		<h:panelGrid columns="2">
+		
+		<h:outputLabel value="Codigo do cargo" />
+		<h:inputText value="#{FuncaoMB.funcao.idFun}"/>
+		
+		<h:outputLabel value="Nome do cargo"/>
+		<h:inputText value="#{FuncaoMB.funcao.nomeFun}"/>
+		
+		<h:commandButton value="Cadastrar" action="#{FuncaoMB.gravar(FuncaoMB.funcao)}"/>
+		
+	</h:panelGrid>
+</form>
 </body>
 </html>
